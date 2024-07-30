@@ -15,7 +15,7 @@ console.log(process.env.AWS_SECRET_ACCESS_KEY)
 app.use(express.json());
 
 app.get('/api', (req, res) => {
-  res.send('GET request received');
+  res.send(process.env.AWS_ACCESS_KEY_ID);
 });
 
 app.post('/post', (req, res) => {
