@@ -1,6 +1,16 @@
 // index.js
-const express = require('express');
+import express from 'express';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+
 const app = express();
+
+console.log(process.env.AWS_ACCESS_KEY_ID)
+console.log(process.env.AWS_SECRET_ACCESS_KEY)
+
+
 
 app.use(express.json());
 
