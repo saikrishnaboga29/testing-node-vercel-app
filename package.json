@@ -1,4 +1,10 @@
-{
+{ 
+  "name": "testing-node-vercel-app",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2"
@@ -6,5 +12,8 @@
   "type": "module",
   "devDependencies": {
     "vercel": "^35.2.1"
+  },
+  "engines": {
+    "node": ">=14.x"
   }
 }
